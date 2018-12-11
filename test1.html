@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>测试</title>
+</head>
+<body>
+<script>
+  class Tree{
+    constructor (v, children) {
+      this.v = v
+      this.children = children || null
+    }
+  }
+  const tree = new Tree(10, [
+    new Tree(5),
+    new Tree(3, [
+      new Tree(7),
+      new Tree(11)
+    ]),
+    new Tree(2)
+  ])
+  console.log(tree)
+</script>
+</body>
+</html>
